@@ -150,7 +150,52 @@
         }
     }
 
+    .tab_sec{
 
+        .tab_list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding:2.5rem 0;
+
+            button{
+                background-color: var(--base-col1);
+                color:#fff;
+                font-weight: 700;
+                padding:6px 20px;
+                border-radius: 20px;
+                font-size: 1.5rem;
+            }
+        }
+        .tab_cont{position: relative; height: 200px; overflow: hidden;}
+        .tab_cont_inner{}
+        .tab_cont_slide{
+            display: none;
+            width: 430px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            float: left;
+            padding: 20px 40px;
+            li{
+                height: 65px;
+                text-align: center;
+                flex: 1 1 20%;
+                font-size: 1.4rem;;
+                a{
+                    height: 100%;
+                    padding:10px 5px;
+                    background-color: var(--base-col2);
+                    border-radius: 15px;
+                    span{display: block;}
+                    span:nth-child(2){font-size:1.3rem; color:#999; padding-top:5px;}
+
+                }
+            }
+        }
+    }
 
 
     // mob_app_nav

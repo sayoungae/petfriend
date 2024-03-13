@@ -16,11 +16,11 @@
                 },
                 topNavList: [
                     {
-                        url: "/home",
+                        url: "#none",
                         title: "HOME"
                     },
                     {
-                        url: "/welcom",
+                        url: "#none",
                         title: "웰컴펫페어"
                     },
                     {
@@ -94,7 +94,6 @@
                         <a class="link" :href="nav.url" :title="nav.title">{{ nav.title }}</a>
                     </slide>
                 </Carousel>
-                
             </div>
         </div>
     </div>
