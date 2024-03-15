@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+
 import mobHome from '@/components/mobHome.vue'
+import mobWelcome from '@/components/mobWelcome.vue'
+
 
 const routes = [
   {
@@ -12,14 +15,12 @@ const routes = [
         path:'/',
         component: mobHome,
       },
-      // {
-      //   path:'chart',
-      //   component: ChartSection,
-      // }
+      {
+        path:'welcome',
+        component: mobWelcome,
+      }
     ]
   },
-  
-  
 ]
 
 const router = createRouter({

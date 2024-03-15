@@ -150,6 +150,26 @@
         }
     }
 
+    #main{
+        height: 745px; overflow-y: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        &::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera*/
+        }
+    }
+    // notice_sec
+    .notice_sec{
+        border-bottom:1px solid #F8F8F8;
+        font-size:1.3rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding:10px 0;
+        .fix{font-weight: 700; padding:0 8px; flex-shrink: 0;}
+        div{flex-grow: 1;}
+    }
+    // tab_sec
     .tab_sec{
 
         .tab_list{
@@ -169,7 +189,6 @@
             }
         }
         .tab_cont{position: relative; height: 200px; overflow: hidden;}
-        .tab_cont_inner{}
         .tab_cont_slide{
             display: none;
             width: 430px;
@@ -197,7 +216,28 @@
         }
     }
 
+    // discount_sec
+    .discount_sec{
+        padding:20px 20px 40px;
+        ul{
+            border-top:2px solid #F8F8F8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:20px 0;
+            gap: 10px;
+            li{
+                width: calc(100% / 3 - 5px );
+                padding:15px;
+                border:1px solid #f1efef;
+                border-radius: 15px;
+                box-shadow: 2px 2px 3px #F8F8F8;
 
+                .title{font-weight: 700; font-size:1.7rem;}
+                .sub_txt{font-size:1.2rem; color:#cacaca}
+            }
+        }
+    }
     // mob_app_nav
     #mob_app_nav{
         width: 100%;

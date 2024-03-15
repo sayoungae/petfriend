@@ -25,19 +25,17 @@ export default {
             </div>
         </div>
         <div class="notice_sec">
+            <p class="fix">공지</p>
             <div>
-                <p class="fix">공지</p>
-                <div>
-                    <span>[공지] 펫푸드 2000총 최대 69% 인하</span>
-                </div>
-                <span>></span>
+                <span>[공지] 펫푸드 2000총 최대 69% 인하</span>
             </div>
+            <span class="fix">></span>
         </div>
         <div class="tab_sec">
             <div>
                 <div class="tab_list" >
-                    <button type="button" 
-                    class="tab_tit_btn" 
+                    <button type="button"
+                    class="tab_tit_btn"
                     v-for="(tab, index) in tabs" :key = "tab"
                     v-bind:class="{active:activeTab===index}"
                     @click="activateTab(index)"><span>{{tab}}</span></button>
@@ -186,8 +184,27 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="discount_sec"></div>
-        <div class="sub_visual"></div>
+        <div class="discount_sec">
+            <ul>
+                <li>
+                    <p class="title">건강 멤버십</p>
+                    <span class="sub_txt">월 15,900원</span>
+                </li>
+                <li>
+                    <p class="title">지금 할인중</p>
+                    <span class="sub_txt">오늘이 제일 싸요</span>
+                </li>
+                <li>
+                    <p class="title">펫 테리어</p>
+                    <span class="sub_txt">함께하는 공간</span>
+                </li>
+            </ul>
+        </div>
+        <div class="sub_visual">
+            <a href="#none" title="">
+                <img src="../assets/images/sub_banner01.jpeg"/>
+            </a>
+        </div>
         <div class="product_sec"></div>
     </div>
 </template>

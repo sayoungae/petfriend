@@ -16,11 +16,11 @@
                 },
                 topNavList: [
                     {
-                        url: "#none",
+                        url: "/",
                         title: "HOME"
                     },
                     {
-                        url: "#none",
+                        url: "/welcome",
                         title: "웰컴펫페어"
                     },
                     {
