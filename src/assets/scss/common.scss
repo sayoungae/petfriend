@@ -5,7 +5,7 @@
 @import "vars";
 
 .svg_colr_wh{filter: brightness(0) saturate(100%) invert(99%) sepia(5%) saturate(492%) hue-rotate(296deg) brightness(113%) contrast(100%);}
-
+h2{font-size:2.3rem; padding:10px; text-align: center;}
 #app{
     height: 100vh;
     background:url('../images/background.png');
@@ -144,6 +144,7 @@
     }
     #topNav{
         padding: 15px 0px;
+        font-weight: 600;
         .carousel__track{
             gap: 10px;
         }

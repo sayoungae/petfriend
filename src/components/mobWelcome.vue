@@ -5,5 +5,6 @@
     // })
 </script>
 <template>
-    mobWelcome
+    <h2>웰컴펫페어</h2>
+    <img src="../assets/images/loading.png"/>
 </template>

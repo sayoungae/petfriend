@@ -24,19 +24,19 @@
                         title: "웰컴펫페어"
                     },
                     {
-                        url: "#none",
+                        url: "/page3",
                         title: "사료최저가!"
                     },
                     {
-                        url: "#none",
+                        url: "/page4",
                         title: "베스트어워즈"
                     },
                     {
-                        url: "#none",
+                        url: "/page5",
                         title: "NEW신상"
                     },
                     {
-                        url: "#none",
+                        url: "/page6",
                         title: "맘마샘플"
                     },
                     {

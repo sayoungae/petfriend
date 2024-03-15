@@ -9,15 +9,15 @@ export const topNavList = [
         title: "웰컴펫페어"
     },
     {
-        url: "#none",
+        url: "/page4",
         title: "사료최저가도전!"
     },
     {
-        url: "#none",
+        url: "/page5",
         title: "베스트어워즈"
     },
     {
-        url: "#none",
+        url: "/page6",
         title: "NEW신상"
     },
     {
