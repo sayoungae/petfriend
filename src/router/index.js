@@ -22,23 +22,23 @@ const routes = [
         component: mobHome,
       },
       {
-        path:'welcome',
+        path:'/welcome',
         component: mobWelcome,
       },
       {
-        path:'page3',
+        path:'/page3',
         component: mobpage3,
       },
       {
-        path:'page4',
+        path:'/page4',
         component: mobpage4,
       },
       {
-        path:'page5',
+        path:'/page5',
         component: mobpage5,
       },
       {
-        path:'page6',
+        path:'/page6',
         component: mobpage6,
       },
     ]
