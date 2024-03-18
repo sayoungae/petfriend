@@ -1,9 +1,14 @@
 <script>
 export default {
+    // name: "tabs",
     data() {
         return {
-            activeTab: 0,
-            tabs:["사료","간식","용품"]
+            currentTab: 0,
+            tabList:[
+                {name: "사료"},
+                {name: "간식"},
+                {name: "용품"},
+            ]
         };
     },
     methods: {
@@ -36,13 +41,12 @@ export default {
                 <div class="tab_list" >
                     <button type="button"
                     class="tab_tit_btn"
-                    v-for="(tab, index) in tabs" :key = "tab"
-                    v-bind:class="{active:activeTab===index}"
-                    @click="activateTab(index)"><span>{{tab}}</span></button>
+                    v-for="(tab, index) in tabList" :key = "index"
+                    @click.prevent="currentTab = index"><span>{{tab.name}}</span></button>
                 </div>
                 <div class="tab_cont">
                     <div class="tab_cont_inner">
-                        <ul class="tab_cont_slide" v-show="activeTab === 0">
+                        <ul class="tab_cont_slide"  v-if="(currentTab === 0)">
                             <li>
                                 <a href="#none" title="">
                                     <span class="tit">어덜트</span>
@@ -88,7 +92,7 @@ export default {
                                 </a>
                             </li>
                         </ul>
-                        <ul class="tab_cont_slide" v-show="activeTab === 1">
+                        <ul class="tab_cont_slide" v-if="(currentTab === 1)">
                             <li>
                                 <a href="#none" title="">
                                     <span class="tit">2어덜트</span>
@@ -134,7 +138,7 @@ export default {
                                 </a>
                             </li>
                         </ul>
-                        <ul class="tab_cont_slide" v-show="activeTab === 2">
+                        <ul class="tab_cont_slide" v-if="(currentTab === 2)">
                             <li>
                                 <a href="#none" title="">
                                     <span class="tit">3어덜트</span>

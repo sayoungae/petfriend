@@ -2,7 +2,7 @@ import "./assets/scss/common.scss";
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router/index.js'
-import Tabs from "vue-material-tabs";
+
 
 
 let app = "";
@@ -23,7 +23,6 @@ else {
     
     // Install the required instances like plugin, component and directive.
     app.use(router);
-    app.use(Tabs);
     // Mount 'app' (App.vue) as root component.
     app.mount(containerSelector);
 }
